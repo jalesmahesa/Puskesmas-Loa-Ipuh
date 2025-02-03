@@ -1,0 +1,35 @@
+.fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.fab {
+    background-color: #ff4081;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fab-options {
+    display: none; /* Sembunyikan opsi secara default */
+}
+
+.fab:hover + .fab-options {
+    display: block; /* Tampilkan opsi saat hover */
+}
+
+.fab-options li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.fab-icon-holder {
+    display: flex;
+    align-items: center;
+}
